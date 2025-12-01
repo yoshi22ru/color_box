@@ -1,0 +1,22 @@
+{
+    "name": "Graffity.Groq.ModelApiSample",
+    "rootNamespace": "Graffity.Groq.ModelApiSample",
+    "references": [
+        "UniTask",
+        "Graffity.Groq",
+        "Unity.TextMeshPro",
+        "R3.Unity",
+        "Graffity.Groq.Sample.Common"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "R3.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
