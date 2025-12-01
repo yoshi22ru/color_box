@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55423
+55945
 -job-worker-count
 6
 -background-job-worker-count
@@ -68,7 +68,7 @@ Successfully changed project path to: /Users/tdu.yamazaki.lab/bowling_gameのコ
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8483250368]  Target information:
 
-Player connection [8483250368]  * "[IP] 133.14.178.6 [Port] 0 [Flags] 2 [Guid] 1088954735 [EditorId] 1088954735 [Version] 1048832 [Id] OSXEditor(0,dot1xh0518.14-176-20.wlan.ms.dendai.ac.jp) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8483250368]  * "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 3699622539 [EditorId] 3699622539 [Version] 1048832 [Id] OSXEditor(0,yamazakikenkyuushitsunoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8483250368] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8483250368] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -83,7 +83,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.19 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 2.22 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.49f1 (840e0a9776d9)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -98,7 +98,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56907
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -106,8 +106,8 @@ Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/Pla
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.001325 seconds.
-- Loaded All Assemblies, in  0.175 seconds
+Registered in 0.001962 seconds.
+- Loaded All Assemblies, in  0.198 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -117,21 +117,21 @@ Unable to list connected devices.
 * daemon not running; starting now at tcp:5037
 ADB server didn't ACK
 Full server startup log: /var/folders/w2/v8k4qy2j4dd8xjqc_228k_nw0000gn/T//adb.501.log
-Server had pid: 48776
---- adb starting (pid 48776) ---
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Version 34.0.5-10900879
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Version 34.0.5-10900879
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 
-12-01 16:22:55.847 48775 4700333 I adb     : auth.cpp:416 adb_auth_init...
-12-01 16:22:55.849 48775 4700333 I adb     : auth.cpp:152 loaded new key from '/Users/tdu.yamazaki.lab/.android/adbkey' with fingerprint C45851290BAA46B51E3F5814F82CCA4C3E946D49B6BF7470175C8A42D1DD6CC1
-12-01 16:22:56.365 48776 4700334 F adb     : main.cpp:165 could not install *smartsocket* listener: Address already in use
+Server had pid: 54938
+--- adb starting (pid 54938) ---
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Version 34.0.5-10900879
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Version 34.0.5-10900879
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 
+12-01 17:02:06.906 54939 4786140 I adb     : auth.cpp:416 adb_auth_init...
+12-01 17:02:06.907 54939 4786140 I adb     : auth.cpp:152 loaded new key from '/Users/tdu.yamazaki.lab/.android/adbkey' with fingerprint C45851290BAA46B51E3F5814F82CCA4C3E946D49B6BF7470175C8A42D1DD6CC1
+12-01 17:02:07.426 54938 4786138 F adb     : main.cpp:165 could not install *smartsocket* listener: Address already in use
 
 * failed to start daemon
 adb: failed to check server version: cannot connect to daemon
@@ -161,21 +161,21 @@ stderr[
 * daemon not running; starting now at tcp:5037
 ADB server didn't ACK
 Full server startup log: /var/folders/w2/v8k4qy2j4dd8xjqc_228k_nw0000gn/T//adb.501.log
-Server had pid: 48776
---- adb starting (pid 48776) ---
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Version 34.0.5-10900879
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
-12-01 16:22:55.845 48776 4700334 I adb     : main.cpp:63 
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Version 34.0.5-10900879
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
-12-01 16:22:55.845 48775 4700333 I adb     : main.cpp:63 
-12-01 16:22:55.847 48775 4700333 I adb     : auth.cpp:416 adb_auth_init...
-12-01 16:22:55.849 48775 4700333 I adb     : auth.cpp:152 loaded new key from '/Users/tdu.yamazaki.lab/.android/adbkey' with fingerprint C45851290BAA46B51E3F5814F82CCA4C3E946D49B6BF7470175C8A42D1DD6CC1
-12-01 16:22:56.365 48776 4700334 F adb     : main.cpp:165 could not install *smartsocket* listener: Address already in use
+Server had pid: 54938
+--- adb starting (pid 54938) ---
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Version 34.0.5-10900879
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
+12-01 17:02:06.905 54939 4786140 I adb     : main.cpp:63 
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Android Debug Bridge version 1.0.41
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Version 34.0.5-10900879
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Installed as /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 Running on Darwin 24.6.0 (arm64)
+12-01 17:02:06.905 54938 4786138 I adb     : main.cpp:63 
+12-01 17:02:06.906 54939 4786140 I adb     : auth.cpp:416 adb_auth_init...
+12-01 17:02:06.907 54939 4786140 I adb     : auth.cpp:152 loaded new key from '/Users/tdu.yamazaki.lab/.android/adbkey' with fingerprint C45851290BAA46B51E3F5814F82CCA4C3E946D49B6BF7470175C8A42D1DD6CC1
+12-01 17:02:07.426 54938 4786138 F adb     : main.cpp:165 could not install *smartsocket* listener: Address already in use
 
 * failed to start daemon
 adb: failed to check server version: cannot connect to daemon
@@ -204,44 +204,44 @@ UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules () (at /Users
 
 (Filename: /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/DeploymentTargets/AndroidDeploymentTargetsExtension.cs Line: 420)
 
-Android Extension - Scanning For ADB Devices 648 ms
+Android Extension - Scanning For ADB Devices 645 ms
 Native extension for WindowsStandalone target not found
-objc[48756]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/iOSSupport/arm64/UnityEditor.iOS.Native.dylib (0x141058610) and /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x141658610). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[54907]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/iOSSupport/arm64/UnityEditor.iOS.Native.dylib (0x3222dc610) and /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x3227a8610). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for VisionOS target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.953 seconds
-Domain Reload Profiling: 1128ms
-	BeginReloadAssembly (38ms)
+- Finished resetting the current domain, in  0.920 seconds
+Domain Reload Profiling: 1118ms
+	BeginReloadAssembly (52ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (20ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (88ms)
-		LoadAssemblies (39ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (93ms)
+		LoadAssemblies (54ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (86ms)
-			TypeCache.Refresh (85ms)
-				TypeCache.ScanAssembly (78ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (89ms)
+				TypeCache.ScanAssembly (82ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (953ms)
+	FinalizeReload (920ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (920ms)
+		SetupLoadedEditorAssemblies (886ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (759ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (94ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			InitializePlatformSupportModulesInManaged (747ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (76ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -254,9 +254,9 @@ Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Pro
 Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.536 seconds
+- Loaded All Assemblies, in  0.575 seconds
 Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
-Refreshing native plugins compatible for Editor in 1.48 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.45 ms, found 7 plugins.
 Shader 'Universal Render Pipeline/Nature/SpeedTree7': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
 Shader 'Hidden/Universal Render Pipeline/StencilDeferred': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
@@ -277,8 +277,8 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-TypeManager.Initialize took: 207ms
-Refreshing native plugins compatible for Editor in 1.36 ms, found 7 plugins.
+TypeManager.Initialize took: 222ms
+Refreshing native plugins compatible for Editor in 1.41 ms, found 7 plugins.
 Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.PolySpatial.PolySpatialSettings.LoadPackageVersion () [0x0003c] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:243 
@@ -306,35 +306,35 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.789 seconds
-Domain Reload Profiling: 1325ms
-	BeginReloadAssembly (80ms)
+- Finished resetting the current domain, in  0.895 seconds
+Domain Reload Profiling: 1465ms
+	BeginReloadAssembly (74ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
+		CreateAndSetChildDomain (23ms)
 	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (395ms)
-		LoadAssemblies (177ms)
+	LoadAllAssembliesAndSetupDomain (436ms)
+		LoadAssemblies (201ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (245ms)
-			TypeCache.Refresh (193ms)
-				TypeCache.ScanAssembly (178ms)
-			BuildScriptInfoCaches (40ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (790ms)
+		AnalyzeDomain (263ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (193ms)
+			BuildScriptInfoCaches (42ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (895ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (671ms)
+		SetupLoadedEditorAssemblies (782ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
+			InitializePlatformSupportModulesInManaged (84ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (490ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (521ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -389,75 +389,75 @@ WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.31 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.34 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 297 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 10547 unused Assets / (20.9 MB). Loaded Objects now: 11084.
 Memory consumption went from 221.4 MB to 200.5 MB.
-Total: 11.569083 ms (FindLiveObjects: 0.358375 ms CreateObjectMapping: 0.233834 ms MarkObjects: 6.051166 ms  DeleteObjects: 4.925208 ms)
+Total: 11.738875 ms (FindLiveObjects: 0.409542 ms CreateObjectMapping: 0.235875 ms MarkObjects: 6.086875 ms  DeleteObjects: 5.006375 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 340137.970750 seconds.
+  Time since last request: 342489.196062 seconds.
   path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
   artifactKey: Guid(19a9abb883540be48b75b951a927ae03) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '000b0934bce55301ca4f82b2b6026f90') in 0.00568725 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '000b0934bce55301ca4f82b2b6026f90') in 0.005513542 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.035217 seconds.
+  Time since last request: 0.008916 seconds.
   path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph
   artifactKey: Guid(a3d800b099a06e0478fb790c5e79057a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph using Guid(a3d800b099a06e0478fb790c5e79057a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'fd02ec64617d91a3775060557ecffd50') in 0.129023083 seconds
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph using Guid(a3d800b099a06e0478fb790c5e79057a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'fd02ec64617d91a3775060557ecffd50') in 0.136574791 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
+  Time since last request: 0.000033 seconds.
   path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
   artifactKey: Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0d1d393e919794926cd7b8c08ff06fd9') in 0.001694416 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0d1d393e919794926cd7b8c08ff06fd9') in 0.003727667 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
+  Time since last request: 0.000031 seconds.
   path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
   artifactKey: Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '3ecc53687f16a9a3e3ecdd91d604936c') in 0.001683542 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '3ecc53687f16a9a3e3ecdd91d604936c') in 0.00121475 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016175 seconds.
+  Time since last request: 0.018038 seconds.
   path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
   artifactKey: Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '48a1c63d21267abf92f9708d867840f9') in 0.001732917 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '48a1c63d21267abf92f9708d867840f9') in 0.001402375 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.023694 seconds.
+  Time since last request: 0.023636 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Interactable.shadergraph
   artifactKey: Guid(0927d29e476ce5843b1f7d2a96943c51) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Interactable.shadergraph using Guid(0927d29e476ce5843b1f7d2a96943c51) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f89210242b4de35f0fcd84a12fb22ae8') in 0.023736042 seconds
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Interactable.shadergraph using Guid(0927d29e476ce5843b1f7d2a96943c51) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f89210242b4de35f0fcd84a12fb22ae8') in 0.023327625 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008352 seconds.
+  Time since last request: 0.008607 seconds.
   path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
   artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '9cc4e3e1b5b42c49eec210e6327c504b') in 0.00173975 seconds
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '9cc4e3e1b5b42c49eec210e6327c504b') in 0.001478958 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000726 seconds.
+  Time since last request: 0.000531 seconds.
   path: Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph
   artifactKey: Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph using Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b42da4e38f02ee4d876e59f85cc51fe') in 0.02066725 seconds
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph using Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b42da4e38f02ee4d876e59f85cc51fe') in 0.023748583 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
@@ -465,594 +465,977 @@ Received Import Request.
   Time since last request: 0.000038 seconds.
   path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph
   artifactKey: Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph using Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f582d6d56e7aa385cc442d823e48bc9f') in 0.029683583 seconds
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph using Guid(ca2ed216f98028c4dae6c5224a952b3c) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f582d6d56e7aa385cc442d823e48bc9f') in 0.030202459 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
+  Time since last request: 0.000033 seconds.
   path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf
   artifactKey: Guid(30dc370b164eefc43b95744fc796dad0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '694847b4f46bc7bf1df3465433fb2cbc') in 0.001777375 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '694847b4f46bc7bf1df3465433fb2cbc') in 0.001241208 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph
-  artifactKey: Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph using Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e201e484c7901dccbb91c69512710678') in 0.429154625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000674 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
-  artifactKey: Guid(2a29e27936eb547458f646f71125b264) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '3f4f06631332db74f893fe06c2dfdee0') in 0.001734625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000523 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph
-  artifactKey: Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph using Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '330e7f4590b617d8ed8554768d3ab1f1') in 0.019192584 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf
-  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0ca641b86e9d7b39ecd41476d616642c') in 0.001141041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005758 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph
-  artifactKey: Guid(d7288f66e4fb0634c9afef98c31b722a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph using Guid(d7288f66e4fb0634c9afef98c31b722a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4c8f334426717e1811c0a520bac0ae92') in 0.008990916 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003905 seconds.
-  path: Packages/com.unity.polyspatial.extensions/Shaders/DepthReprojection.shadergraph
-  artifactKey: Guid(2dd61ea438aa447e0b5631483023b9b7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial.extensions/Shaders/DepthReprojection.shadergraph using Guid(2dd61ea438aa447e0b5631483023b9b7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '462eaf1b0fd99d97c09d047fd05b794a') in 0.016061167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006471 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph
-  artifactKey: Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph using Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4288d6eb160b9b95e6f8d072c8a813b7') in 0.022036166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001415 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph
-  artifactKey: Guid(24a73dccd7b6fad4798be282f96a21f4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph using Guid(24a73dccd7b6fad4798be282f96a21f4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7f67081f75284ff3c5b589135d6f417a') in 0.008420917 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005763 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/UnlitBakedMeshParticles.shadergraph
-  artifactKey: Guid(f4f5c043a1afad548b4950de5ffa5d8f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/UnlitBakedMeshParticles.shadergraph using Guid(f4f5c043a1afad548b4950de5ffa5d8f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '84add5e04594e34d5e3556d481f56d5b') in 0.017852042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000039 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
-  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'bbf23cb5c74e1cfb10eb3f9f23ab8625') in 0.0016465 seconds
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph
+  artifactKey: Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph using Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e201e484c7901dccbb91c69512710678') in 0.448787542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
+  artifactKey: Guid(2a29e27936eb547458f646f71125b264) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '3f4f06631332db74f893fe06c2dfdee0') in 0.001249167 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006893 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
-  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '85f667daa6298d3fce537e83206508f1') in 0.001678166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000539 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph
-  artifactKey: Guid(30fa68ce467463643a86b839ca0eb195) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph using Guid(30fa68ce467463643a86b839ca0eb195) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '63f2036d9ba3f83f44ff0cc69aeae118') in 0.022131583 seconds
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph
+  artifactKey: Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph using Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '330e7f4590b617d8ed8554768d3ab1f1') in 0.019617833 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.021700 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
-  artifactKey: Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '1147b0724354403397e6df92b9cb1b93') in 0.00170375 seconds
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf
+  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0ca641b86e9d7b39ecd41476d616642c') in 0.001240458 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.017710 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph
-  artifactKey: Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph using Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '92c4ed50bfc5e728598cb9448e62bbce') in 0.266442375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011424 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph
-  artifactKey: Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph using Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'fe836e5073f51b68bc5509d3badc634c') in 0.143226333 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph
-  artifactKey: Guid(0e9d5a909a1f7e84882a534d0d11e49f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph using Guid(0e9d5a909a1f7e84882a534d0d11e49f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '5c3dfadf87b3022991e14125735882de') in 0.013253166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023200 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
-  artifactKey: Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf using Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '8d0e5b761cea9c8cf67c7a2db5d77e20') in 0.001867083 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003805 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
-  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0d4a32975c180caa139d46f678295fe4') in 0.001932042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph
-  artifactKey: Guid(44245ab89240f51459a5077d7145c452) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '79bd6998a535ad4639fa53447592def4') in 0.026272458 seconds
+  Time since last request: 0.004488 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph
+  artifactKey: Guid(d7288f66e4fb0634c9afef98c31b722a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph using Guid(d7288f66e4fb0634c9afef98c31b722a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4c8f334426717e1811c0a520bac0ae92') in 0.008668125 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008777 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.2.1/visionOS/Shaders/Slider.shadergraph
-  artifactKey: Guid(7e6edf9d94a364251bc20ef8b2422ea3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/visionOS/Shaders/Slider.shadergraph using Guid(7e6edf9d94a364251bc20ef8b2422ea3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'df17fdefc26bd4c4b2b05e6c1fce94de') in 0.0078365 seconds
+  Time since last request: 0.003659 seconds.
+  path: Packages/com.unity.polyspatial.extensions/Shaders/DepthReprojection.shadergraph
+  artifactKey: Guid(2dd61ea438aa447e0b5631483023b9b7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial.extensions/Shaders/DepthReprojection.shadergraph using Guid(2dd61ea438aa447e0b5631483023b9b7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '462eaf1b0fd99d97c09d047fd05b794a') in 0.015404 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.029338 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph
-  artifactKey: Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph using Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7cb32b4b0983068c76147dd294e88441') in 0.25879075 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_ShaderGraph.shadergraph
-  artifactKey: Guid(740445f1490c01e4b8feacf8d9ab5e7f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_ShaderGraph.shadergraph using Guid(740445f1490c01e4b8feacf8d9ab5e7f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e0204bbb8dec9e28afe582dfa6c5d31c') in 0.010960167 seconds
+  Time since last request: 0.006421 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph
+  artifactKey: Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph using Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4288d6eb160b9b95e6f8d072c8a813b7') in 0.023097708 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph
-  artifactKey: Guid(80aa867ac363ac043847b06ad71604cd) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f6663223b87cb5f817f5204641e35226') in 0.012545583 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
-  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e29e813e8ca70137c74020b9790b09e3') in 0.001644875 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph
-  artifactKey: Guid(1a207e3bee00db44b940e6f362a8e148) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph using Guid(1a207e3bee00db44b940e6f362a8e148) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '30dfc548f1998af51e4c4d49404ceb92') in 0.020737125 seconds
+  Time since last request: 0.000464 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph
+  artifactKey: Guid(24a73dccd7b6fad4798be282f96a21f4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph using Guid(24a73dccd7b6fad4798be282f96a21f4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7f67081f75284ff3c5b589135d6f417a') in 0.00874725 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
-  artifactKey: Guid(5e63515167650a541b309ba3bfd4db3d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b38111502c6275dede8bcb1b1781286') in 0.001660458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008637 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/TunnelingVignette/TunnelingVignetteSG.shadergraph
-  artifactKey: Guid(c109fab5d2bf5f64598ed69d2c16ceb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/TunnelingVignette/TunnelingVignetteSG.shadergraph using Guid(c109fab5d2bf5f64598ed69d2c16ceb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '240f4896ce5f1e4750a49d347695d066') in 0.009818292 seconds
+  Time since last request: 0.003921 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/UnlitBakedMeshParticles.shadergraph
+  artifactKey: Guid(f4f5c043a1afad548b4950de5ffa5d8f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/UnlitBakedMeshParticles.shadergraph using Guid(f4f5c043a1afad548b4950de5ffa5d8f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '84add5e04594e34d5e3556d481f56d5b') in 0.015708958 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023392 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph
-  artifactKey: Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e617132b4c9db22e64f886a91bc0405b') in 0.072607584 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000600 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph
-  artifactKey: Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f86ae48597760fac81a4ea35f0253918') in 0.080565042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002704 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph
-  artifactKey: Guid(3739e562a03fc0b4982d8aa66cc50865) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph using Guid(3739e562a03fc0b4982d8aa66cc50865) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7482e198114a730a50320879bf25201d') in 0.012997833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001663 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
-  artifactKey: Guid(a51a3aebb43ac044989270407476b208) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '02fba383daa6be5f8fcd4925104c8240') in 0.001622625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000043 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph
-  artifactKey: Guid(5c81372d981403744adbdda4433c9c11) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph using Guid(5c81372d981403744adbdda4433c9c11) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e9dee3a84ae8b09760de93d51a182f7f') in 0.014923292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014090 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf
-  artifactKey: Guid(f4eec857a4fdf2f43be0e9f3d1a984e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf using Guid(f4eec857a4fdf2f43be0e9f3d1a984e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '39ee5f13e1b1f361affe82338d275fbf') in 0.001560583 seconds
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
+  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'bbf23cb5c74e1cfb10eb3f9f23ab8625') in 0.001322209 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_Fresnel.shadergraph
-  artifactKey: Guid(e19b5bb6cb8e91e43b1b5d81a069296f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_Fresnel.shadergraph using Guid(e19b5bb6cb8e91e43b1b5d81a069296f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4a3fbb140b31e65166f9062143860596') in 0.00924175 seconds
+  Time since last request: 0.006156 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
+  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '85f667daa6298d3fce537e83206508f1') in 0.001371625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000555 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph
+  artifactKey: Guid(30fa68ce467463643a86b839ca0eb195) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph using Guid(30fa68ce467463643a86b839ca0eb195) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '63f2036d9ba3f83f44ff0cc69aeae118') in 0.025192667 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.028265 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '10820d3f62c27df1cedab8d63d1a3fbf') in 0.001987916 seconds
+  Time since last request: 0.023168 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
+  artifactKey: Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '1147b0724354403397e6df92b9cb1b93') in 0.001258792 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
-  artifactKey: Guid(1062c701058745940ae5dca6219c64c8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'd9ed446a496ffda27dc1b188c90fb505') in 0.00166575 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.017989 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph
+  artifactKey: Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph using Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '92c4ed50bfc5e728598cb9448e62bbce') in 0.275257291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
-  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '85abb8dc82416fff9d8720b8451672f6') in 0.001623542 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph
-  artifactKey: Guid(fb6390f650ca44a5ba3246d8dda47927) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph using Guid(fb6390f650ca44a5ba3246d8dda47927) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'ad2a4c3db3e23445cce7c4121edb2e95') in 0.009735334 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
-  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0fa329035f6b4df51803ee6c3dbff3cf') in 0.025921917 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph
-  artifactKey: Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '9da5ebb3db63cb0ae87a9aa923b94ba1') in 0.014241666 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
-  artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph using Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '49f5082b74e783a9b9551e676cba01c9') in 0.030180958 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph
-  artifactKey: Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph using Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'a4fdd47c0825dd983def7fa2d07c4e44') in 0.135898209 seconds
+  Time since last request: 0.011301 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph
+  artifactKey: Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph using Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'fe836e5073f51b68bc5509d3badc634c') in 0.140664166 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicProjected.shadergraph
-  artifactKey: Guid(6322b1c2042244ebb93d48ffbe05958a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicProjected.shadergraph using Guid(6322b1c2042244ebb93d48ffbe05958a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'db39a304e235a465dae46eb8f8e6d324') in 0.017871041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicStatic.shadergraph
-  artifactKey: Guid(bd4d1763258b6434585812f9e3ae08c0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicStatic.shadergraph using Guid(bd4d1763258b6434585812f9e3ae08c0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'ca5d77e41e873bc2112b415eec163bd2') in 0.012455709 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Prepare
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.18 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 127 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 136 unused Assets / (11.5 MB). Loaded Objects now: 11102.
-Memory consumption went from 282.7 MB to 271.2 MB.
-Total: 23.377500 ms (FindLiveObjects: 0.226959 ms CreateObjectMapping: 0.164208 ms MarkObjects: 20.430291 ms  DeleteObjects: 2.555666 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.22 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (11.5 MB). Loaded Objects now: 11102.
-Memory consumption went from 282.3 MB to 270.8 MB.
-Total: 23.203750 ms (FindLiveObjects: 0.257000 ms CreateObjectMapping: 0.090875 ms MarkObjects: 20.155209 ms  DeleteObjects: 2.700166 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.16 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (11.6 MB). Loaded Objects now: 11102.
-Memory consumption went from 282.3 MB to 270.7 MB.
-Total: 23.456042 ms (FindLiveObjects: 0.233042 ms CreateObjectMapping: 0.151667 ms MarkObjects: 20.408583 ms  DeleteObjects: 2.662417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.699064 seconds.
-  path: Assets/Readme.asset
-  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50ea5ad2cda8720781b90d71f311d8d1') in 0.007850084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.624694 seconds.
-  path: Assets/VolumeCameraWindowConfiguration.asset
-  artifactKey: Guid(893142bd9177243d48633c478a73eb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VolumeCameraWindowConfiguration.asset using Guid(893142bd9177243d48633c478a73eb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b93edeb56fa01f635bb92012ccfc71c') in 0.000687458 seconds
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph
+  artifactKey: Guid(0e9d5a909a1f7e84882a534d0d11e49f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph using Guid(0e9d5a909a1f7e84882a534d0d11e49f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '5c3dfadf87b3022991e14125735882de') in 0.018298292 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.830366 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '078d800940176c256ca0b9da7e720ef3') in 0.003375791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.558713 seconds.
-  path: Assets/BGM/Cat_life.mp3
-  artifactKey: Guid(f683fa18e67b94f2ca5c72af3f796901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BGM/Cat_life.mp3 using Guid(f683fa18e67b94f2ca5c72af3f796901) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e71b4eab1b4bb60067aec278b45c19da') in 0.041866875 seconds
+  Time since last request: 0.023139 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
+  artifactKey: Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf using Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '8d0e5b761cea9c8cf67c7a2db5d77e20') in 0.001757917 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.718076 seconds.
-  path: Assets/ApiSample/Scenes/TextToSpeechSample.unity
-  artifactKey: Guid(f914c4c1ad0974202aa13b844d5a5456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ApiSample/Scenes/TextToSpeechSample.unity using Guid(f914c4c1ad0974202aa13b844d5a5456) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59959ad10d7abe838d1cd8121a9b9aee') in 0.000271459 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.003293 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0d4a32975c180caa139d46f678295fe4') in 0.002393667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.931562 seconds.
-  path: Assets/ApiSample/Scenes/SpeechSample.unity
-  artifactKey: Guid(6246420e415fd461399ebad3a15b6792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ApiSample/Scenes/SpeechSample.unity using Guid(6246420e415fd461399ebad3a15b6792) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0412a9d160b3f3b10c34112bc6e2c86') in 0.00032625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000042 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph
+  artifactKey: Guid(44245ab89240f51459a5077d7145c452) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '79bd6998a535ad4639fa53447592def4') in 0.018686292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.709067 seconds.
-  path: Assets/ApiSample/Scenes/ModelDetailSample.unity
-  artifactKey: Guid(c2d9ceb0697a245b58d467c5bae72437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ApiSample/Scenes/ModelDetailSample.unity using Guid(c2d9ceb0697a245b58d467c5bae72437) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc6ab66a69851f6c3110e499cb2f404a') in 0.00032175 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.008249 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/visionOS/Shaders/Slider.shadergraph
+  artifactKey: Guid(7e6edf9d94a364251bc20ef8b2422ea3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/visionOS/Shaders/Slider.shadergraph using Guid(7e6edf9d94a364251bc20ef8b2422ea3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'df17fdefc26bd4c4b2b05e6c1fce94de') in 0.007735958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.811126 seconds.
-  path: Assets/ApiSample/Scenes/LLMSample.unity
-  artifactKey: Guid(47d305b5824704963b99ee75c4d20c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ApiSample/Scenes/LLMSample.unity using Guid(47d305b5824704963b99ee75c4d20c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '450d37ffb3e3cb9963609d5257d378f6') in 0.0003195 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.026979 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph
+  artifactKey: Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph using Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7cb32b4b0983068c76147dd294e88441') in 0.267276292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.810250 seconds.
-  path: Assets/ApiSample/Scenes/FileApiSample.unity
-  artifactKey: Guid(8b0523490300348dfaf8ce10e9a58a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ApiSample/Scenes/FileApiSample.unity using Guid(8b0523490300348dfaf8ce10e9a58a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65a9e6a2e650e5cde5c7a3f77e4ec42b') in 0.000330542 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000038 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_ShaderGraph.shadergraph
+  artifactKey: Guid(740445f1490c01e4b8feacf8d9ab5e7f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_ShaderGraph.shadergraph using Guid(740445f1490c01e4b8feacf8d9ab5e7f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e0204bbb8dec9e28afe582dfa6c5d31c') in 0.008266292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph
+  artifactKey: Guid(80aa867ac363ac043847b06ad71604cd) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f6663223b87cb5f817f5204641e35226') in 0.015396083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
+  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e29e813e8ca70137c74020b9790b09e3') in 0.001163541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph
+  artifactKey: Guid(1a207e3bee00db44b940e6f362a8e148) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph using Guid(1a207e3bee00db44b940e6f362a8e148) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '30dfc548f1998af51e4c4d49404ceb92') in 0.018636125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
+  artifactKey: Guid(5e63515167650a541b309ba3bfd4db3d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b38111502c6275dede8bcb1b1781286') in 0.001176709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008483 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/TunnelingVignette/TunnelingVignetteSG.shadergraph
+  artifactKey: Guid(c109fab5d2bf5f64598ed69d2c16ceb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/TunnelingVignette/TunnelingVignetteSG.shadergraph using Guid(c109fab5d2bf5f64598ed69d2c16ceb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '240f4896ce5f1e4750a49d347695d066') in 0.009528583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022892 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph
+  artifactKey: Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e617132b4c9db22e64f886a91bc0405b') in 0.080495208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph
+  artifactKey: Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f86ae48597760fac81a4ea35f0253918') in 0.07673325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002609 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph
+  artifactKey: Guid(3739e562a03fc0b4982d8aa66cc50865) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph using Guid(3739e562a03fc0b4982d8aa66cc50865) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7482e198114a730a50320879bf25201d') in 0.017013542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001127 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
+  artifactKey: Guid(a51a3aebb43ac044989270407476b208) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '02fba383daa6be5f8fcd4925104c8240') in 0.001225584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph
+  artifactKey: Guid(5c81372d981403744adbdda4433c9c11) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph using Guid(5c81372d981403744adbdda4433c9c11) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e9dee3a84ae8b09760de93d51a182f7f') in 0.012482458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014056 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf
+  artifactKey: Guid(f4eec857a4fdf2f43be0e9f3d1a984e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf using Guid(f4eec857a4fdf2f43be0e9f3d1a984e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '39ee5f13e1b1f361affe82338d275fbf') in 0.001259166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000662 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_Fresnel.shadergraph
+  artifactKey: Guid(e19b5bb6cb8e91e43b1b5d81a069296f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/Shaders/Unlit_Fresnel.shadergraph using Guid(e19b5bb6cb8e91e43b1b5d81a069296f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4a3fbb140b31e65166f9062143860596') in 0.009811916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027175 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '10820d3f62c27df1cedab8d63d1a3fbf') in 0.00147375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
+  artifactKey: Guid(1062c701058745940ae5dca6219c64c8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'd9ed446a496ffda27dc1b188c90fb505') in 0.001419292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '85abb8dc82416fff9d8720b8451672f6') in 0.001274875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph
+  artifactKey: Guid(fb6390f650ca44a5ba3246d8dda47927) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph using Guid(fb6390f650ca44a5ba3246d8dda47927) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'ad2a4c3db3e23445cce7c4121edb2e95') in 0.0099625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0fa329035f6b4df51803ee6c3dbff3cf') in 0.030480084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph
+  artifactKey: Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '9da5ebb3db63cb0ae87a9aa923b94ba1') in 0.01370725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+  artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph using Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '49f5082b74e783a9b9551e676cba01c9') in 0.029675417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph
+  artifactKey: Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph using Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'a4fdd47c0825dd983def7fa2d07c4e44') in 0.14663625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicProjected.shadergraph
+  artifactKey: Guid(6322b1c2042244ebb93d48ffbe05958a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicProjected.shadergraph using Guid(6322b1c2042244ebb93d48ffbe05958a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'db39a304e235a465dae46eb8f8e6d324') in 0.020169833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicStatic.shadergraph
+  artifactKey: Guid(bd4d1763258b6434585812f9e3ae08c0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
+Start importing Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicStatic.shadergraph using Guid(bd4d1763258b6434585812f9e3ae08c0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'ca5d77e41e873bc2112b415eec163bd2') in 0.012758125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.15 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 127 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 136 unused Assets / (11.7 MB). Loaded Objects now: 11102.
+Memory consumption went from 282.8 MB to 271.1 MB.
+Total: 22.766875 ms (FindLiveObjects: 0.237292 ms CreateObjectMapping: 0.110416 ms MarkObjects: 19.671375 ms  DeleteObjects: 2.747417 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.39 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (11.6 MB). Loaded Objects now: 11102.
+Memory consumption went from 282.3 MB to 270.7 MB.
+Total: 23.055500 ms (FindLiveObjects: 0.258666 ms CreateObjectMapping: 0.093084 ms MarkObjects: 19.208917 ms  DeleteObjects: 3.493833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.33 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (11.6 MB). Loaded Objects now: 11102.
+Memory consumption went from 282.2 MB to 270.6 MB.
+Total: 24.422917 ms (FindLiveObjects: 0.248750 ms CreateObjectMapping: 0.101791 ms MarkObjects: 21.096334 ms  DeleteObjects: 2.975917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.501409 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Audio/Button Pop.wav
+  artifactKey: Guid(16fba6d30ed741d4a9fdd6e79ee2f3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Audio/Button Pop.wav using Guid(16fba6d30ed741d4a9fdd6e79ee2f3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be0cf61e7146c24dfc22c6ece2396b4d') in 0.043011583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.13 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 126 unused Assets / (11.6 MB). Loaded Objects now: 11112.
+Memory consumption went from 271.9 MB to 260.3 MB.
+Total: 22.750542 ms (FindLiveObjects: 0.222625 ms CreateObjectMapping: 0.138250 ms MarkObjects: 19.651292 ms  DeleteObjects: 2.737667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.991406 seconds.
+  path: Assets/Anime_Motion12-1(Mid).mp3
+  artifactKey: Guid(8211e5db816f845a29d54989af0345d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Anime_Motion12-1(Mid).mp3 using Guid(8211e5db816f845a29d54989af0345d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '806ba59d4caa469fe105e0df01be5e3b') in 0.007070333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/VolumeCameraWindowConfiguration.asset
+  artifactKey: Guid(893142bd9177243d48633c478a73eb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VolumeCameraWindowConfiguration.asset using Guid(893142bd9177243d48633c478a73eb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b93edeb56fa01f635bb92012ccfc71c') in 0.000620625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Readme.asset
+  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50ea5ad2cda8720781b90d71f311d8d1') in 0.000919167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.44 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10480 unused Assets / (20.8 MB). Loaded Objects now: 11083.
+Memory consumption went from 277.5 MB to 256.7 MB.
+Total: 26.326291 ms (FindLiveObjects: 0.425916 ms CreateObjectMapping: 0.209667 ms MarkObjects: 19.805291 ms  DeleteObjects: 5.885083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x360787000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.529 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Refreshing native plugins compatible for Editor in 1.34 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for VisionOS target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+TypeManager.Initialize took: 217ms
+Refreshing native plugins compatible for Editor in 1.30 ms, found 7 plugins.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.PolySpatial.PolySpatialSettings.LoadPackageVersion () [0x0003c] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:243 
+  at Unity.PolySpatial.PolySpatialSettings.InitializeInEditor () [0x00007] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:225 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <82571d7f5249456da89e34eb003220a7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <82571d7f5249456da89e34eb003220a7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <82571d7f5249456da89e34eb003220a7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:142 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:146)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 146)
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.821 seconds
+Domain Reload Profiling: 1354ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (333ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (169ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (147ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (822ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (723ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (520ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.34 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 145 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10538 unused Assets / (22.1 MB). Loaded Objects now: 11092.
+Memory consumption went from 254.7 MB to 232.6 MB.
+Total: 13.004916 ms (FindLiveObjects: 0.416958 ms CreateObjectMapping: 0.241417 ms MarkObjects: 6.185958 ms  DeleteObjects: 6.160208 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (265.3 KB). Loaded Objects now: 11092.
+Memory consumption went from 232.6 MB to 232.4 MB.
+Total: 6.149250 ms (FindLiveObjects: 0.259042 ms CreateObjectMapping: 0.095750 ms MarkObjects: 5.752291 ms  DeleteObjects: 0.041750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.48 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 126 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10464 unused Assets / (20.6 MB). Loaded Objects now: 11065.
+Memory consumption went from 205.0 MB to 184.4 MB.
+Total: 13.486292 ms (FindLiveObjects: 0.443334 ms CreateObjectMapping: 0.218791 ms MarkObjects: 5.498959 ms  DeleteObjects: 7.324667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x351e17000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.528 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Refreshing native plugins compatible for Editor in 1.58 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for VisionOS target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+TypeManager.Initialize took: 213ms
+Refreshing native plugins compatible for Editor in 1.35 ms, found 7 plugins.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.PolySpatial.PolySpatialSettings.LoadPackageVersion () [0x0003c] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:243 
+  at Unity.PolySpatial.PolySpatialSettings.InitializeInEditor () [0x00007] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:225 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <82571d7f5249456da89e34eb003220a7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <82571d7f5249456da89e34eb003220a7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <82571d7f5249456da89e34eb003220a7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:142 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:146)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 146)
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.810 seconds
+Domain Reload Profiling: 1341ms
+	BeginReloadAssembly (127ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (355ms)
+		LoadAssemblies (202ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (174ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (151ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (810ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (714ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (514ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (3ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.64 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10513 unused Assets / (22.1 MB). Loaded Objects now: 11076.
+Memory consumption went from 277.0 MB to 255.0 MB.
+Total: 16.379500 ms (FindLiveObjects: 0.465167 ms CreateObjectMapping: 0.230750 ms MarkObjects: 5.944750 ms  DeleteObjects: 9.738250 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (208.7 KB). Loaded Objects now: 11076.
+Memory consumption went from 254.9 MB to 254.7 MB.
+Total: 5.662375 ms (FindLiveObjects: 0.240833 ms CreateObjectMapping: 0.093958 ms MarkObjects: 5.288084 ms  DeleteObjects: 0.039084 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

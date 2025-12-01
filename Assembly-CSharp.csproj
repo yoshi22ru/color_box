@@ -69,22 +69,17 @@
     <Compile Include="Assets/interfaces/IAsyncFileRequest.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/ThirdPersonCamera.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
-    <Compile Include="Assets/Api/File/DownloadFile.cs" />
     <Compile Include="Assets/Script/FingerContactSound.cs" />
     <Compile Include="Assets/Script/RayAttachModifier.cs" />
     <Compile Include="Assets/Script/SoundPlay.cs" />
     <Compile Include="Assets/Script/AudioFeedbackController.cs" />
-    <Compile Include="Assets/Api/File/FileResponse.cs" />
-    <Compile Include="Assets/Api/Speech/AvpTranscriptionDemo.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/MovePlayerInput.cs" />
     <Compile Include="Assets/Script/EquationGenerator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/Script/AvpRecordingDemo.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
-    <Compile Include="Assets/Api/Text/MessageContent.cs" />
     <Compile Include="Assets/Script/RandomSound.cs" />
-    <Compile Include="Assets/Api/Models/GetModelList.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
@@ -93,15 +88,11 @@
     <Compile Include="Assets/Script/CountDown.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
-    <Compile Include="Assets/Api/Speech/WavFileReaderWriter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/Script/HandAudioSourceManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
-    <Compile Include="Assets/Api/File/FileUpload.cs" />
     <Compile Include="Assets/Common/Response.cs" />
-    <Compile Include="Assets/Api/File/RetrieveFile.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets/Api/Models/GetModelDetail.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/Script/ScorePanel.cs" />
     <Compile Include="Assets/interfaces/IAsyncRequest.cs" />
@@ -115,15 +106,12 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Script/CubeSpawner.cs" />
-    <Compile Include="Assets/Api/File/GetFileList.cs" />
     <Compile Include="Assets/Script/GameManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Script/MetalSurfaceAudio.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
-    <Compile Include="Assets/Api/Speech/SpeechAiModelType.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
-    <Compile Include="Assets/Api/Models/ModelResponse.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
     <Compile Include="Assets/Script/MetalSurfaceRayAudio.cs" />
@@ -131,21 +119,15 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
     <Compile Include="Assets/Script/MoveCube.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets/Api/Speech/Transcription.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
-    <Compile Include="Assets/Api/Text/TextResponse.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
-    <Compile Include="Assets/Api/Text/ChatCompletion.cs" />
     <Compile Include="Assets/interfaces/IAsyncChatRequest.cs" />
-    <Compile Include="Assets/Api/File/DeleteFile.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/PlayerCamera.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/CreatureMover.cs" />
     <Compile Include="Assets/Script/HandAttachSwitcher.cs" />
-    <Compile Include="Assets/Api/Speech/SpeechResponse.cs" />
     <Compile Include="Assets/interfaces/IAsyncAudioRequest.cs" />
-    <Compile Include="Assets/Api/Speech/Speech.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -1752,17 +1734,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.Hands.Samples.VisualizerSample.csproj" />
-    <ProjectReference Include="Graffity.Groq.LLMSample.csproj" />
-    <ProjectReference Include="Graffity.Groq.Sample.Common.csproj" />
-    <ProjectReference Include="Graffity.Groq.TTSSample.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
     <ProjectReference Include="Unity.XR.Hands.Samples.Gestures.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.VisionOS.csproj" />
-    <ProjectReference Include="Graffity.Groq.SpeechSample.csproj" />
-    <ProjectReference Include="Graffity.Groq.ModelApiSample.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.VisionOS.Editor.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
-    <ProjectReference Include="Graffity.Groq.FileApiSample.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

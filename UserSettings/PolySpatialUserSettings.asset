@@ -20,12 +20,6 @@ MonoBehaviour:
     m_Connections:
     - m_IP: 192.168.11.4
       m_ServerPort: 9876
-    - m_IP: 133.14.184.198
-      m_ServerPort: 9876
-    - m_IP: 10.203.82.75
-      m_ServerPort: 9876
-    - m_IP: 10.157.79.75
-      m_ServerPort: 9876
     m_ConnectionsInfo:
     - IP: 192.168.11.4
       Name: localhost
@@ -34,27 +28,6 @@ MonoBehaviour:
       HostPolySpatialVersion: 2.4.3
       HostPolySpatialMagicCookie: 1754062704675767000
       IsSelected: 1
-    - IP: 133.14.184.198
-      Name: localhost
-      ServerPort: 9876
-      Status: 0
-      HostPolySpatialVersion: 
-      HostPolySpatialMagicCookie: 0
-      IsSelected: 0
-    - IP: 10.203.82.75
-      Name: localhost
-      ServerPort: 9876
-      Status: 0
-      HostPolySpatialVersion: 2.4.3
-      HostPolySpatialMagicCookie: 1754062704675767000
-      IsSelected: 0
-    - IP: 10.157.79.75
-      Name: localhost
-      ServerPort: 9876
-      Status: 0
-      HostPolySpatialVersion: 2.4.3
-      HostPolySpatialMagicCookie: 1754062704675767000
-      IsSelected: 0
   m_PlayToDeviceLimitFPSEnable: 1
   m_PlayToDeviceLimitFPS: 45
   m_PlayToDeviceDynamicallyAdjustFPSEnable: 1
