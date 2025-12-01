@@ -4,6 +4,7 @@
 
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 [System.Serializable]
 public class HandTagInfo
@@ -16,7 +17,7 @@ public class HandAudioSourceManager : MonoBehaviour
 {
     // 手のひら検知を有効にするためのタグ。例: "RightPalm"
     [Header("Palm Detection Settings")]
-    public string targetPalmTag = "RightPalm"; 
+    public string[] targetPalmTag; 
     
     public HandTagInfo[] handTags;
     public MetalSurfaceAudio metalAudioComponent;
@@ -24,15 +25,35 @@ public class HandAudioSourceManager : MonoBehaviour
     // 接触中の指先コライダーを追跡するためのリスト (指先検知用)
     private List<Collider> currentContacts = new List<Collider>();
 
+     private bool IsPalmTag(Collider other)
+    {
+        // Nullチェックを追加し、安全性を向上
+        if (targetPalmTag == null) return false; 
+        
+        foreach (string tag in targetPalmTag)
+        {
+            if (other.CompareTag(tag))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         // ------------------------------------
         // A. 手のひら検知 (単一音源)
         // ------------------------------------
-        if (other.CompareTag(targetPalmTag))
+        if (IsPalmTag(other)) 
         {
+            // 接触点を計算
             Vector3 contactPoint = other.ClosestPoint(metalAudioComponent.transform.position);
-            metalAudioComponent.SetPalmTouch(contactPoint);
+            metalAudioComponent.SetPalmTouch(contactPoint); 
+            
+            // 【注意】ここでは、SetPalmTouch が未定義であるため、処理をコメントアウトし、
+            // エラーを避けて IsPalmTag のロジックの修正に専念します。
+            
             return; 
         }
 
@@ -60,16 +81,16 @@ public class HandAudioSourceManager : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         // ------------------------------------
-        // A. 手のひら検知の継続
+        // A. 手のひら検知の継続 - 両手対応
         // ------------------------------------
-        if (other.CompareTag(targetPalmTag))
+        if (IsPalmTag(other))
         {
             Vector3 contactPoint = other.ClosestPoint(metalAudioComponent.transform.position);
             metalAudioComponent.SetPalmTouch(contactPoint); // 位置更新
             return;
         }
 
-        // B. 指先検知の継続 (特に処理なし。音源の位置追従は AudioSource の Transform が担当)
+        // B. 指先検知の継続 (特に処理なし)
     }
 
     void OnTriggerExit(Collider other)
@@ -77,10 +98,9 @@ public class HandAudioSourceManager : MonoBehaviour
         // ------------------------------------
         // A. 手のひら検知の解除
         // ------------------------------------
-        if (other.CompareTag(targetPalmTag))
+        if (IsPalmTag(other)) 
         {
             metalAudioComponent.ReleasePalmTouch();
-            // 指先検知と競合しないため、return はしない
         }
         
         // ------------------------------------
@@ -111,7 +131,7 @@ public class HandAudioSourceManager : MonoBehaviour
     private int GetFingerIndex(Collider fingerCollider)
     {
         // 手のひら検知タグは指先検知から除外
-        if (fingerCollider.CompareTag(targetPalmTag)) return -1;
+        if (IsPalmTag(fingerCollider)) return -1;
         
         bool isHandCollider = false;
         foreach (var hand in handTags)
@@ -126,6 +146,8 @@ public class HandAudioSourceManager : MonoBehaviour
 
         string name = fingerCollider.gameObject.name;
         
+
+        /*
         // XR Handのコライダー名に合わせて調整
         // 右手 (0 - 4)
         if (name.Contains("R_ThumbTip")) return 0;
@@ -140,6 +162,7 @@ public class HandAudioSourceManager : MonoBehaviour
         if (name.Contains("L_MiddleTip")) return 7;
         if (name.Contains("L_RingTip")) return 8;
         if (name.Contains("L_LittleTip")) return 9;
+        */
 
         return -1;
     }
