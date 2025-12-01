@@ -726,7 +726,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1439683952}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1674,7 +1674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a68fbad662ec458f81baf98b4a5cb84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _apiKey: ***REMOVED***
+  _apiKey: 
   _audioAssetPath: Assets/StreamingAssets/voiceTest_001_metan.wav
   _view: {fileID: 2037138111}
 --- !u!4 &1035539153
@@ -2271,8 +2271,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1760090769}
   m_HandleRect: {fileID: 1760090768}
   m_Direction: 2
-  m_Value: 1.0000025
-  m_Size: 0.89922297
+  m_Value: 1.0000017
+  m_Size: 0.8869791
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

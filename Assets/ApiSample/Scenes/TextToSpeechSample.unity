@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a8952a90696473987e663a729a3481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _apiKey: ***REMOVED***
+  _apiKey: 
   _view: {fileID: 2037138111}
   _voiceType: 2
 --- !u!4 &1035539153

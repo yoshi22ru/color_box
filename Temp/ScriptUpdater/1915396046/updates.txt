@@ -1,0 +1,1 @@
+Temp/ScriptUpdater/1915396046/1215673194_UnityXRBaseInteractableExtensions.cs => Library/PackageCache/com.cysharp.r3@fe2216b2d5c4/Runtime/External/XRInteractionToolkit/UnityXRBaseInteractableExtensions.cs
