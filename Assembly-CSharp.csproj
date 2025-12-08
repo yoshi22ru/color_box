@@ -69,17 +69,20 @@
     <Compile Include="Assets/interfaces/IAsyncFileRequest.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/ThirdPersonCamera.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
+    <Compile Include="Assets/BallLauncher.cs" />
     <Compile Include="Assets/Script/FingerContactSound.cs" />
     <Compile Include="Assets/Script/RayAttachModifier.cs" />
     <Compile Include="Assets/Script/SoundPlay.cs" />
     <Compile Include="Assets/Script/AudioFeedbackController.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/MovePlayerInput.cs" />
     <Compile Include="Assets/Script/EquationGenerator.cs" />
+    <Compile Include="Assets/HandZone.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/Script/AvpRecordingDemo.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
     <Compile Include="Assets/Script/RandomSound.cs" />
+    <Compile Include="Assets/CurvingBall.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
@@ -91,6 +94,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/Script/HandAudioSourceManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
+    <Compile Include="Assets/BallCatcher.cs" />
     <Compile Include="Assets/Common/Response.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
@@ -123,9 +127,11 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
+    <Compile Include="Assets/RandomLauncher.cs" />
     <Compile Include="Assets/interfaces/IAsyncChatRequest.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/PlayerCamera.cs" />
     <Compile Include="Assets/ithappy/Animals_FREE/Scripts/CreatureMover.cs" />
+    <Compile Include="Assets/HybridSoundBall.cs" />
     <Compile Include="Assets/Script/HandAttachSwitcher.cs" />
     <Compile Include="Assets/interfaces/IAsyncAudioRequest.cs" />
   </ItemGroup>
