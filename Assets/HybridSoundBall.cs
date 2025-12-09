@@ -3,71 +3,78 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class HybridSoundBall : MonoBehaviour
 {
-    [Header("動きの設定")]
-    public float curveAmount = 0f;
+    private Rigidbody rb;
 
     [Header("ターゲット情報")]
-    public Transform listenerHead; // 発射時にセット
+    public Transform listenerHead;
 
-    [Header("音源の割り当て（重要）")]
-    [Tooltip("電子音・ビープ音用のAudioSource")]
+    [Header("音源設定")]
     public AudioSource signalSource;
-    [Tooltip("風切り音・ノイズ用のAudioSource")]
     public AudioSource windSource;
 
-    [Header("【Signal】接近アラーム設定")]
-    public float maxSignalDistance = 20f; // この距離からピッチ変化開始
-    public float choppingStartDistance = 5f; // この距離から切れ始める
-    public float minSignalPitch = 0.8f;
-    public float maxSignalPitch = 3.0f;
+    [Header("Signal - 接近アラーム設定")]
+    public float maxSignalDistance = 20f;
+    public float choppingStartDistance = 10f;
+    public float minSignalPitch = 0.7f;
+    public float maxSignalPitch = 1.3f;
     public float minChopSpeed = 10f;
     public float maxChopSpeed = 50f;
 
-    [Header("【Wind】風切り音設定")]
+    [Header("Wind - 風切り音設定")]
     public float minWindPitch = 0.8f;
     public float maxWindPitch = 1.5f;
-    [Tooltip("この速度(m/s)で風切り音が最大音量になる")]
-    public float maxSpeedForWind = 20f; 
 
-    private Rigidbody rb;
+    [Header("弾の物理 / カーブ")]
+    public float curveAmount = 0f;
+
+    [Header("消滅設定（ミス判定）")]
+    [Tooltip("プレイヤーを通り過ぎてから何メートル飛んだら消えるか")]
+    public float destroyMargin = 3.0f; 
+    [Tooltip("この高さより下に落ちたら消える（床判定）")]
+    public float floorHeight = -0.5f;
+
+    private TrajectoryPredictor trajectory;
+    private bool initialized = false;
     private float chopTimer;
+    
+    // 距離計算用
+    private Vector3 startPosition;
+    private float distanceToTarget; // 発射地点からターゲットまでの距離
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        trajectory = GetComponent<TrajectoryPredictor>();
+
+        if (signalSource != null) signalSource.Play();
+        if (windSource != null) windSource.Play();
+    }
+
+    public void Initialize(Vector3 velocity, Transform target, float curve)
+    {
+        listenerHead = target;
+        curveAmount = curve;
         
-        // エラー防止：AudioSourceがセットされてなければ自分自身から探す
-        if (signalSource == null || windSource == null)
+        // スタート地点と、ターゲットまでの距離を記録
+        startPosition = transform.position;
+        if (target != null)
         {
-            var sources = GetComponents<AudioSource>();
-            if (sources.Length >= 2)
-            {
-                signalSource = sources[0];
-                windSource = sources[1];
-            }
-            else
-            {
-                Debug.LogError("AudioSourceが2つ必要です！");
-            }
+            distanceToTarget = Vector3.Distance(startPosition, target.position);
         }
 
-        // --- Signal音（距離用）の初期設定 ---
-        signalSource.spatialBlend = 1.0f; 
-        signalSource.dopplerLevel = 0.2f; // 電子音はドップラー少なめで聞きやすく
-        signalSource.loop = true;
-        if (!signalSource.isPlaying) signalSource.Play();
+        rb.linearVelocity = velocity;
+        
+        if (trajectory != null)
+        {
+            trajectory.ShowTrajectory(transform.position, velocity, curveAmount);
+        }
 
-        // --- Wind音（風圧用）の初期設定 ---
-        windSource.spatialBlend = 1.0f;
-        windSource.dopplerLevel = 1.5f;   // 風はドップラー強めで「通り過ぎた感」を出す
-        windSource.loop = true;
-        if (!windSource.isPlaying) windSource.Play();
+        initialized = true;
     }
 
     void FixedUpdate()
     {
-        // カーブ処理
-        if (rb.linearVelocity.sqrMagnitude > 0.1f)
+        if (curveAmount != 0f)
         {
             Vector3 sideVector = Vector3.Cross(rb.linearVelocity.normalized, Vector3.up);
             rb.AddForce(sideVector * curveAmount, ForceMode.Acceleration);
@@ -76,52 +83,65 @@ public class HybridSoundBall : MonoBehaviour
 
     void Update()
     {
-        if (listenerHead == null) return;
+        if (!initialized || listenerHead == null) return;
 
+        // --- 1. ミス（通り過ぎ・落下）判定 ---
+        CheckMissAndDestroy();
+
+        // --- 2. 音の処理 ---
+        UpdateAudio();
+    }
+
+    // ★追加：ボールが役割を終えたかチェックして消す
+    void CheckMissAndDestroy()
+    {
+        // A. 床に落ちた場合
+        if (transform.position.y < floorHeight)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        // B. プレイヤーの後ろに通り過ぎた場合
+        // 「発射地点からの現在の距離」が「発射地点からターゲットまでの距離 + 余白」を超えたら消す
+        float currentDistanceFromStart = Vector3.Distance(startPosition, transform.position);
+
+        if (currentDistanceFromStart > distanceToTarget + destroyMargin)
+        {
+            // ここで消すことで、軌跡も一緒に消えます
+            Destroy(gameObject);
+        }
+    }
+
+    void UpdateAudio()
+    {
         float distance = Vector3.Distance(transform.position, listenerHead.position);
         float speed = rb.linearVelocity.magnitude;
 
-        // ==========================================
-        // 1. Signal Source (接近アラーム) の制御
-        // ==========================================
-        
-        // ピッチ制御（距離ベース）
+        // Signal (接近音)
         float t_dist = Mathf.InverseLerp(maxSignalDistance, 0.5f, distance);
         signalSource.pitch = Mathf.Lerp(minSignalPitch, maxSignalPitch, t_dist);
 
-        // ボリューム制御（チョッピング）
         if (distance > choppingStartDistance)
         {
-            signalSource.volume = 1.0f; // 遠い時は鳴りっぱなし
+             signalSource.volume = 1.0f; 
         }
         else
         {
-            // 近い時は高速点滅
-            float t_chop = Mathf.InverseLerp(choppingStartDistance, 0.1f, distance);
+            float t_chop = Mathf.InverseLerp(choppingStartDistance, 0.5f, distance);
             float currentChopSpeed = Mathf.Lerp(minChopSpeed, maxChopSpeed, t_chop);
-            
             chopTimer += Time.deltaTime * currentChopSpeed;
-            // 矩形波でON/OFF
-            signalSource.volume = (Mathf.Sin(chopTimer) > 0) ? 1.0f : 0.0f;
+            signalSource.volume = (Mathf.Sin(chopTimer) * 0.5f) + 0.5f;
         }
 
-        // ==========================================
-        // 2. Wind Source (風切り音) の制御
-        // ==========================================
-        
-        // 速度が速いほど音が大きくなる
-        // Mathf.Clamp01 は値を 0~1 に制限します
-        float speedFactor = Mathf.Clamp01(speed / maxSpeedForWind);
-        
-        // 基本音量に速度を反映
+        // Wind (風切り音)
+        float speedFactor = Mathf.Clamp01(speed / 20f);
         windSource.volume = speedFactor;
-
-        // 速度が速いと風の音程も少し高くする（より鋭い音に）
         windSource.pitch = Mathf.Lerp(minWindPitch, maxWindPitch, speedFactor);
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnDestroy()
     {
-        Destroy(gameObject);
+        if (trajectory != null) trajectory.Hide();
     }
 }

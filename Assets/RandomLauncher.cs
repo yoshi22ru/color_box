@@ -4,7 +4,7 @@ public class RandomLauncher : MonoBehaviour
 {
     [Header("設定")]
     public GameObject ballPrefab;
-    public Transform target; // プレイヤーのカメラ(Head)
+    public Transform target; // プレイヤーの頭（耳）
     public Transform firePoint;
 
     [Header("投球パラメータ")]
@@ -15,7 +15,6 @@ public class RandomLauncher : MonoBehaviour
     public float autoFireInterval = 4f;
 
     [Header("ターゲットのばらつき")]
-    [Tooltip("ターゲット中心から上下左右にずらす範囲(m)")]
     public Vector3 targetOffsetRange = new Vector3(1.0f, 0.5f, 0f);
 
     private float timer;
@@ -39,37 +38,28 @@ public class RandomLauncher : MonoBehaviour
     {
         if (target == null || ballPrefab == null) return;
 
-        // 1. 狙う位置をランダムにずらす計算
-        // ターゲットのローカル座標系ではなく、ワールド座標で単純にずらす例
-        // (必要に応じて target.right * random などに変更可)
+        // 1. ターゲット位置のランダム化
         float offsetX = Random.Range(-targetOffsetRange.x, targetOffsetRange.x);
         float offsetY = Random.Range(-targetOffsetRange.y, targetOffsetRange.y);
-        
-        // ターゲットの現在位置 + ランダムなズレ = 実際の到達点
         Vector3 aimPosition = target.position + new Vector3(offsetX, offsetY, 0);
 
         // 2. ボール生成
         GameObject ballObj = Instantiate(ballPrefab, firePoint.position, firePoint.rotation);
         HybridSoundBall ballScript = ballObj.GetComponent<HybridSoundBall>();
-        Rigidbody rb = ballObj.GetComponent<Rigidbody>();
-
-        // 3. ボールに情報を渡す
-        if (ballScript != null)
-        {
-            ballScript.curveAmount = curveAmount;
-            ballScript.listenerHead = target; // 音の計算用にターゲット（耳）の位置を教える
-        }
-
-        // 4. 物理計算で初速を与える
+        
+        // 3. 初速計算
         Vector3 velocity = CalculateVelocity(firePoint.position, aimPosition, launchAngle);
 
-        if (!float.IsNaN(velocity.x))
-        {
-            rb.linearVelocity = velocity;
-        }
-        else
+        if (float.IsNaN(velocity.x))
         {
             Destroy(ballObj);
+            return;
+        }
+
+        // 4. ★重要★ ボールを初期化（ここで軌跡描画や音の設定が走る）
+        if (ballScript != null)
+        {
+            ballScript.Initialize(velocity, target, curveAmount);
         }
     }
 
@@ -80,13 +70,17 @@ public class RandomLauncher : MonoBehaviour
         float distance = groundDirection.magnitude;
         float heightDifference = direction.y;
         float angleRad = angle * Mathf.Deg2Rad;
+        
+        // 重力のY成分を取得 (通常は -9.81)
         float gravity = Physics.gravity.y;
 
         float tanAlpha = Mathf.Tan(angleRad);
         float cosAlpha = Mathf.Cos(angleRad);
 
+        // 物理公式による初速計算
         float denominator = 2 * cosAlpha * cosAlpha * (distance * tanAlpha - heightDifference);
-        if (denominator <= 0) return Vector3.zero;
+        
+        if (denominator <= 0) return Vector3.zero; // 計算不能（届かない角度など）
 
         float v = Mathf.Sqrt((Mathf.Abs(gravity) * distance * distance) / denominator);
         return groundDirection.normalized * (v * cosAlpha) + Vector3.up * (v * Mathf.Sin(angleRad));
