@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "bowling_gameのコピー.sln"
+    "dotnet.defaultSolution": "color_box.sln"
 }
