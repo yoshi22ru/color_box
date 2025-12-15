@@ -1853,6 +1853,7 @@ GameObject:
   - component: {fileID: 889192025}
   - component: {fileID: 889192024}
   - component: {fileID: 889192026}
+  - component: {fileID: 889192027}
   m_Layer: 5
   m_Name: ResultPanel
   m_TagString: Untagged
@@ -1933,6 +1934,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 263202070}
+--- !u!114 &889192027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889192021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5dc9cba96a9042deab1aa48bd7afc81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &988406937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,6 +2435,7 @@ GameObject:
   - component: {fileID: 1639311410}
   - component: {fileID: 1639311412}
   - component: {fileID: 1639311413}
+  - component: {fileID: 1639311414}
   m_Layer: 5
   m_Name: CountDownPanel (1)
   m_TagString: Untagged
@@ -2512,6 +2526,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1639311414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639311408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5dc9cba96a9042deab1aa48bd7afc81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1648305298
 GameObject:
   m_ObjectHideFlags: 0
