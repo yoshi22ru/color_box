@@ -17,6 +17,9 @@ public class RandomLauncher : MonoBehaviour
     [Header("ターゲットのばらつき")]
     public Vector3 targetOffsetRange = new Vector3(1.0f, 0.5f, 0f);
 
+    [Header("ゲーム管理")]
+    public CountDown countDown;   // ★追加
+
     private float timer;
 
     void Start()
@@ -26,6 +29,9 @@ public class RandomLauncher : MonoBehaviour
 
     void Update()
     {
+        // ★ゲーム終了後は何もしない
+        if (countDown != null && countDown.isFinished) return;
+
         timer += Time.deltaTime;
         if (timer >= autoFireInterval)
         {
@@ -36,6 +42,8 @@ public class RandomLauncher : MonoBehaviour
 
     public void ThrowBall()
     {
+        // ★念のため二重ガード
+        if (countDown != null && countDown.isFinished) return;
         if (target == null || ballPrefab == null) return;
 
         // 1. ターゲット位置のランダム化
@@ -46,7 +54,7 @@ public class RandomLauncher : MonoBehaviour
         // 2. ボール生成
         GameObject ballObj = Instantiate(ballPrefab, firePoint.position, firePoint.rotation);
         HybridSoundBall ballScript = ballObj.GetComponent<HybridSoundBall>();
-        
+
         // 3. 初速計算
         Vector3 velocity = CalculateVelocity(firePoint.position, aimPosition, launchAngle);
 
@@ -56,7 +64,7 @@ public class RandomLauncher : MonoBehaviour
             return;
         }
 
-        // 4. ★重要★ ボールを初期化（ここで軌跡描画や音の設定が走る）
+        // 4. ボール初期化
         if (ballScript != null)
         {
             ballScript.Initialize(velocity, target, curveAmount);
@@ -70,17 +78,14 @@ public class RandomLauncher : MonoBehaviour
         float distance = groundDirection.magnitude;
         float heightDifference = direction.y;
         float angleRad = angle * Mathf.Deg2Rad;
-        
-        // 重力のY成分を取得 (通常は -9.81)
+
         float gravity = Physics.gravity.y;
 
         float tanAlpha = Mathf.Tan(angleRad);
         float cosAlpha = Mathf.Cos(angleRad);
 
-        // 物理公式による初速計算
         float denominator = 2 * cosAlpha * cosAlpha * (distance * tanAlpha - heightDifference);
-        
-        if (denominator <= 0) return Vector3.zero; // 計算不能（届かない角度など）
+        if (denominator <= 0) return Vector3.zero;
 
         float v = Mathf.Sqrt((Mathf.Abs(gravity) * distance * distance) / denominator);
         return groundDirection.normalized * (v * cosAlpha) + Vector3.up * (v * Mathf.Sin(angleRad));

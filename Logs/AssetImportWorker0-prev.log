@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51728
+53976
 -job-worker-count
 6
 -background-job-worker-count
@@ -68,7 +68,7 @@ Successfully changed project path to: /Users/tdu.yamazaki.lab/color_box
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8483250368]  Target information:
 
-Player connection [8483250368]  * "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 1874530786 [EditorId] 1874530786 [Version] 1048832 [Id] OSXEditor(0,yamazakikenkyuushitsunoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8483250368]  * "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 222443739 [EditorId] 222443739 [Version] 1048832 [Id] OSXEditor(0,yamazakikenkyuushitsunoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8483250368] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8483250368] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -83,7 +83,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.46 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.97 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.49f1 (840e0a9776d9)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -98,7 +98,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56819
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -106,51 +106,51 @@ Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/Pla
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.002274 seconds.
-- Loaded All Assemblies, in  0.191 seconds
+Registered in 0.001123 seconds.
+- Loaded All Assemblies, in  0.175 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 56 ms
+Android Extension - Scanning For ADB Devices 51 ms
 Native extension for WindowsStandalone target not found
-objc[90819]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/iOSSupport/arm64/UnityEditor.iOS.Native.dylib (0x168958610) and /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x168ebc610). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[72680]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/iOSSupport/arm64/UnityEditor.iOS.Native.dylib (0x345358610) and /Applications/Unity/Hub/Editor/6000.0.49f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x3454ac610). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for VisionOS target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.310 seconds
-Domain Reload Profiling: 501ms
-	BeginReloadAssembly (52ms)
+- Finished resetting the current domain, in  0.346 seconds
+Domain Reload Profiling: 521ms
+	BeginReloadAssembly (38ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (89ms)
-		LoadAssemblies (55ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (87ms)
+		LoadAssemblies (38ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (84ms)
-			TypeCache.Refresh (84ms)
-				TypeCache.ScanAssembly (76ms)
+		AnalyzeDomain (86ms)
+			TypeCache.Refresh (85ms)
+				TypeCache.ScanAssembly (78ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (310ms)
+	FinalizeReload (346ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (280ms)
+		SetupLoadedEditorAssemblies (315ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (158ms)
 			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (59ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -163,9 +163,9 @@ Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Pro
 Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.598 seconds
+- Loaded All Assemblies, in  0.551 seconds
 Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
-Refreshing native plugins compatible for Editor in 1.27 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.39 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -176,8 +176,8 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-TypeManager.Initialize took: 214ms
-Refreshing native plugins compatible for Editor in 1.46 ms, found 7 plugins.
+TypeManager.Initialize took: 224ms
+Refreshing native plugins compatible for Editor in 1.52 ms, found 7 plugins.
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.PolySpatial.PolySpatialSettings.LoadPackageVersion () [0x0003c] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:243 
   at Unity.PolySpatial.PolySpatialSettings.InitializeInEditor () [0x00007] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:225 
@@ -204,36 +204,36 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.815 seconds
-Domain Reload Profiling: 1412ms
-	BeginReloadAssembly (74ms)
+- Finished resetting the current domain, in  0.845 seconds
+Domain Reload Profiling: 1395ms
+	BeginReloadAssembly (73ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
+		CreateAndSetChildDomain (22ms)
 	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (6ms)
+	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (465ms)
-		LoadAssemblies (251ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (204ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (245ms)
-			TypeCache.Refresh (194ms)
-				TypeCache.ScanAssembly (177ms)
+			TypeCache.Refresh (195ms)
+				TypeCache.ScanAssembly (182ms)
 			BuildScriptInfoCaches (39ms)
 			ResolveRequiredComponents (10ms)
-	FinalizeReload (815ms)
+	FinalizeReload (845ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (697ms)
+		SetupLoadedEditorAssemblies (741ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
+			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (89ms)
-			ProcessInitializeOnLoadAttributes (504ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (0ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (537ms)
+			ProcessInitializeOnLoadMethodAttributes (86ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (1ms)
@@ -281,319 +281,114 @@ WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.49f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.80 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.22 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 299 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10428 unused Assets / (10.1 MB). Loaded Objects now: 11152.
-Memory consumption went from 232.0 MB to 221.8 MB.
-Total: 10.497750 ms (FindLiveObjects: 0.501875 ms CreateObjectMapping: 0.228125 ms MarkObjects: 6.474708 ms  DeleteObjects: 3.292667 ms)
+Unloading 298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10428 unused Assets / (9.6 MB). Loaded Objects now: 11151.
+Memory consumption went from 229.9 MB to 220.3 MB.
+Total: 9.745208 ms (FindLiveObjects: 0.359125 ms CreateObjectMapping: 0.213000 ms MarkObjects: 6.057375 ms  DeleteObjects: 3.115458 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 652639.502600 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
-  artifactKey: Guid(19a9abb883540be48b75b951a927ae03) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '000b0934bce55301ca4f82b2b6026f90') in 0.012319416 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 681575.893523 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Prefabs/UI/TextButton.prefab
+  artifactKey: Guid(e5db301629853dd4a99835fa70099d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Prefabs/UI/TextButton.prefab using Guid(e5db301629853dd4a99835fa70099d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a38bdaa785313c0318b5f7d43f4e5656') in 0.024107584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004637 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
-  artifactKey: Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0d1d393e919794926cd7b8c08ff06fd9') in 0.00194575 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
-  artifactKey: Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '3ecc53687f16a9a3e3ecdd91d604936c') in 0.001894708 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015897 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
-  artifactKey: Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '48a1c63d21267abf92f9708d867840f9') in 0.002128458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.089215 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph
-  artifactKey: Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/MaskingShader.shadergraph using Guid(7f7cb649f1ab84e65be9bf2a547029e4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b42da4e38f02ee4d876e59f85cc51fe') in 0.11825925 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011190 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf
-  artifactKey: Guid(30dc370b164eefc43b95744fc796dad0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '694847b4f46bc7bf1df3465433fb2cbc') in 0.002210209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006636 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph
-  artifactKey: Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Mesh.shadergraph using Guid(6fea08e8012f2429ba5abec01e96cd09) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e201e484c7901dccbb91c69512710678') in 0.437495125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008485 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
-  artifactKey: Guid(2a29e27936eb547458f646f71125b264) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '3f4f06631332db74f893fe06c2dfdee0') in 0.002034375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005767 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph
-  artifactKey: Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/LitBakedMeshParticles.shadergraph using Guid(5289589c1ffa042cda01bb4f48f557b9) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '330e7f4590b617d8ed8554768d3ab1f1') in 0.024492125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004064 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf
-  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '0ca641b86e9d7b39ecd41476d616642c') in 0.002013292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013656 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph
-  artifactKey: Guid(d7288f66e4fb0634c9afef98c31b722a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph using Guid(d7288f66e4fb0634c9afef98c31b722a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4c8f334426717e1811c0a520bac0ae92') in 0.008418125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012145 seconds.
-  path: Packages/com.unity.polyspatial.extensions/Shaders/DepthReprojection.shadergraph
-  artifactKey: Guid(2dd61ea438aa447e0b5631483023b9b7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial.extensions/Shaders/DepthReprojection.shadergraph using Guid(2dd61ea438aa447e0b5631483023b9b7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '462eaf1b0fd99d97c09d047fd05b794a') in 0.015355208 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021321 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph
-  artifactKey: Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/TextSDFSmoothstep.shadergraph using Guid(37a4366187364499d9e9ef99ee64e3e7) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '4288d6eb160b9b95e6f8d072c8a813b7') in 0.023269416 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010003 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph
-  artifactKey: Guid(24a73dccd7b6fad4798be282f96a21f4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph using Guid(24a73dccd7b6fad4798be282f96a21f4) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7f67081f75284ff3c5b589135d6f417a') in 0.008597458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016996 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/UnlitBakedMeshParticles.shadergraph
-  artifactKey: Guid(f4f5c043a1afad548b4950de5ffa5d8f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/UnlitBakedMeshParticles.shadergraph using Guid(f4f5c043a1afad548b4950de5ffa5d8f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '84add5e04594e34d5e3556d481f56d5b') in 0.017729167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
-  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'bbf23cb5c74e1cfb10eb3f9f23ab8625') in 0.002156875 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022286 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
-  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '85f667daa6298d3fce537e83206508f1') in 0.002210542 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007204 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph
-  artifactKey: Guid(30fa68ce467463643a86b839ca0eb195) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph using Guid(30fa68ce467463643a86b839ca0eb195) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '63f2036d9ba3f83f44ff0cc69aeae118') in 0.025323125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.059294 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
-  artifactKey: Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '1147b0724354403397e6df92b9cb1b93') in 0.002277 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016184 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph
-  artifactKey: Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureLit_Billboard.shadergraph using Guid(68bef0c5500b8cf439431d81909e0910) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '92c4ed50bfc5e728598cb9448e62bbce') in 0.264803375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012560 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph
-  artifactKey: Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureUnlit.shadergraph using Guid(4a33372903b7d374ca51ba81da42d89d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'fe836e5073f51b68bc5509d3badc634c') in 0.143649375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph
-  artifactKey: Guid(0e9d5a909a1f7e84882a534d0d11e49f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph using Guid(0e9d5a909a1f7e84882a534d0d11e49f) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '5c3dfadf87b3022991e14125735882de') in 0.018366375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.040801 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph
-  artifactKey: Guid(44245ab89240f51459a5077d7145c452) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '79bd6998a535ad4639fa53447592def4') in 0.0249435 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038452 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph
-  artifactKey: Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticlesFromTextureUnlit_Billboard.shadergraph using Guid(de75a75b3c9f4874ba2da0963f9eceec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7cb32b4b0983068c76147dd294e88441') in 0.257214458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004921 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph
-  artifactKey: Guid(80aa867ac363ac043847b06ad71604cd) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f6663223b87cb5f817f5204641e35226') in 0.016025583 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph
-  artifactKey: Guid(1a207e3bee00db44b940e6f362a8e148) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph using Guid(1a207e3bee00db44b940e6f362a8e148) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '30dfc548f1998af51e4c4d49404ceb92') in 0.016479208 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000047 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Prefabs/UI/ModalSingleButton.prefab
+  artifactKey: Guid(c24a7635b5761984d81cf6c4aac26e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Prefabs/UI/ModalSingleButton.prefab using Guid(c24a7635b5761984d81cf6c4aac26e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9483ca2935333a17ad7f29e285e1ae72') in 0.002457542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000034 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
-  artifactKey: Guid(5e63515167650a541b309ba3bfd4db3d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '6b38111502c6275dede8bcb1b1781286') in 0.002222667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.042722 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph
-  artifactKey: Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e617132b4c9db22e64f886a91bc0405b') in 0.086041292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph
-  artifactKey: Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'f86ae48597760fac81a4ea35f0253918') in 0.074273666 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002726 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph
-  artifactKey: Guid(3739e562a03fc0b4982d8aa66cc50865) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph using Guid(3739e562a03fc0b4982d8aa66cc50865) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '7482e198114a730a50320879bf25201d') in 0.014194625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002272 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
-  artifactKey: Guid(a51a3aebb43ac044989270407476b208) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '02fba383daa6be5f8fcd4925104c8240') in 0.001804375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph
-  artifactKey: Guid(5c81372d981403744adbdda4433c9c11) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph using Guid(5c81372d981403744adbdda4433c9c11) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'e9dee3a84ae8b09760de93d51a182f7f') in 0.015320667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.057790 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
-  artifactKey: Guid(1062c701058745940ae5dca6219c64c8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'd9ed446a496ffda27dc1b188c90fb505') in 0.00196325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph
-  artifactKey: Guid(fb6390f650ca44a5ba3246d8dda47927) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph using Guid(fb6390f650ca44a5ba3246d8dda47927) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'ad2a4c3db3e23445cce7c4121edb2e95') in 0.009551041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph
-  artifactKey: Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: '9da5ebb3db63cb0ae87a9aa923b94ba1') in 0.012038667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002758 seconds.
-  path: Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph
-  artifactKey: Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial/Resources/Shaders/BakeToTextureParticles/ShaderGraph/RenderParticleTrailsFromTextureLit.shadergraph using Guid(51929eb02e0924745ab9abffd92a7e38) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'a4fdd47c0825dd983def7fa2d07c4e44') in 0.147440959 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicProjected.shadergraph
-  artifactKey: Guid(6322b1c2042244ebb93d48ffbe05958a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicProjected.shadergraph using Guid(6322b1c2042244ebb93d48ffbe05958a) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'db39a304e235a465dae46eb8f8e6d324') in 0.016859875 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicStatic.shadergraph
-  artifactKey: Guid(bd4d1763258b6434585812f9e3ae08c0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67)
-Start importing Packages/com.unity.polyspatial.extensions/Shaders/FlatStereoscropicStatic.shadergraph using Guid(bd4d1763258b6434585812f9e3ae08c0) Importer(2089858483,581c8cee6375cf64a6da3fa1fe867c67) (ScriptedImporter) -> (artifact id: 'ca5d77e41e873bc2112b415eec163bd2') in 0.017277333 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  path: Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Push Button.prefab
+  artifactKey: Guid(76f3439a0ae796e4b81bee3f91f888ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.2.1/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Push Button.prefab using Guid(76f3439a0ae796e4b81bee3f91f888ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dd3ac0019c599612f38297e031cca7d') in 0.200298042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 56
 
 ========================================================================
 Received Prepare
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x369fc7000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.511 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Refreshing native plugins compatible for Editor in 1.40 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for VisionOS target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+TypeManager.Initialize took: 211ms
+Refreshing native plugins compatible for Editor in 1.53 ms, found 7 plugins.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.PolySpatial.PolySpatialSettings.LoadPackageVersion () [0x0003c] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:243 
+  at Unity.PolySpatial.PolySpatialSettings.InitializeInEditor () [0x00007] in ./Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/Public/PolySpatialSettingsForEditor.cs:225 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <82571d7f5249456da89e34eb003220a7>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <82571d7f5249456da89e34eb003220a7>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <82571d7f5249456da89e34eb003220a7>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:142 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:146)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 146)
+
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.818 seconds
+Domain Reload Profiling: 1332ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (321ms)
+		LoadAssemblies (177ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (149ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (818ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (722ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (521ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (3ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -636,11 +431,19 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 3.28 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.67 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 46 unused Assets / (4.9 MB). Loaded Objects now: 11169.
-Memory consumption went from 268.0 MB to 263.1 MB.
-Total: 19.530167 ms (FindLiveObjects: 0.266291 ms CreateObjectMapping: 0.092167 ms MarkObjects: 18.152416 ms  DeleteObjects: 1.019167 ms)
+Unloading 60 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10452 unused Assets / (8.5 MB). Loaded Objects now: 11177.
+Memory consumption went from 255.5 MB to 247.1 MB.
+Total: 9.969709 ms (FindLiveObjects: 0.450792 ms CreateObjectMapping: 0.237375 ms MarkObjects: 6.406125 ms  DeleteObjects: 2.875084 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (7.1 MB). Loaded Objects now: 11177.
+Memory consumption went from 247.1 MB to 240.0 MB.
+Total: 6.462917 ms (FindLiveObjects: 0.239292 ms CreateObjectMapping: 0.084458 ms MarkObjects: 5.503625 ms  DeleteObjects: 0.634834 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

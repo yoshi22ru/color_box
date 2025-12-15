@@ -100,6 +100,9 @@ public class BallCatcher : MonoBehaviour
 
         Debug.Log($"<color=cyan>=== NICE CATCH! ({side}) ===</color>");
 
+         // ★ カウントを1増やす
+         ScoreManager.AddCount(1);
+
         if (catchSound != null) AudioSource.PlayClipAtPoint(catchSound, transform.position, soundVolume);
         if (catchEffectPrefab != null) Instantiate(catchEffectPrefab, transform.position, Quaternion.identity);
 

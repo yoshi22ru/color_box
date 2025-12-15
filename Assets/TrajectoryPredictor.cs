@@ -15,8 +15,8 @@ public class TrajectoryPredictor : MonoBehaviour
         lineRenderer.enabled = false; // 最初は隠しておく
         
         // 見た目の設定（太さなど）
-        lineRenderer.startWidth = 0.05f;
-        lineRenderer.endWidth = 0.01f;
+        lineRenderer.startWidth = 0.2f;
+        lineRenderer.endWidth = 0.25f;
         // マテリアルがピンクにならないようデフォルトをセット
         if (lineRenderer.material == null)
             lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
