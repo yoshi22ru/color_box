@@ -536,7 +536,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.PolySpatial.Core">
-      <HintPath>Library/PackageCache/com.unity.polyspatial@d223e8e81ba4/Runtime/EditorAssembly/Unity.PolySpatial.Core.dll</HintPath>
+      <HintPath>Library/PackageCache/com.unity.polyspatial@d00108df3840/Runtime/EditorAssembly/Unity.PolySpatial.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">

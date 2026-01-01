@@ -4,15 +4,22 @@ using UnityEngine;
 public class HybridSoundBall : MonoBehaviour
 {
     private Rigidbody rb;
+    private TrajectoryPredictor trajectory;
 
-    [Header("ターゲット情報")]
+    [Header("ターゲット")]
     public Transform listenerHead;
 
-    [Header("音源設定")]
+    [Header("音源")]
     public AudioSource signalSource;
     public AudioSource windSource;
 
-    [Header("Signal - 接近アラーム設定")]
+    [Header("警告音")]
+    public AudioSource warningSource;
+    public float warningDistance = 4.0f;   // ★ 近づく前に鳴る
+    [Range(0f, 1f)]
+    public float minWarningVolume = 0.5f;
+
+    [Header("Signal設定")]
     public float maxSignalDistance = 20f;
     public float choppingStartDistance = 10f;
     public float minSignalPitch = 0.7f;
@@ -20,26 +27,22 @@ public class HybridSoundBall : MonoBehaviour
     public float minChopSpeed = 10f;
     public float maxChopSpeed = 50f;
 
-    [Header("Wind - 風切り音設定")]
+    [Header("Wind設定")]
     public float minWindPitch = 0.8f;
     public float maxWindPitch = 1.5f;
 
-    [Header("弾の物理 / カーブ")]
+    [Header("物理")]
     public float curveAmount = 0f;
 
-    [Header("消滅設定（ミス判定）")]
-    [Tooltip("プレイヤーを通り過ぎてから何メートル飛んだら消えるか")]
-    public float destroyMargin = 3.0f; 
-    [Tooltip("この高さより下に落ちたら消える（床判定）")]
+    [Header("消滅")]
+    public float destroyMargin = 3.0f;
     public float floorHeight = -0.5f;
 
-    private TrajectoryPredictor trajectory;
-    private bool initialized = false;
+    private bool initialized;
     private float chopTimer;
-    
-    // 距離計算用
+
     private Vector3 startPosition;
-    private float distanceToTarget; // 発射地点からターゲットまでの距離
+    private float distanceToTarget;
 
     void Awake()
     {
@@ -48,36 +51,37 @@ public class HybridSoundBall : MonoBehaviour
 
         if (signalSource != null) signalSource.Play();
         if (windSource != null) windSource.Play();
+
+        if (warningSource != null)
+        {
+            warningSource.loop = true;
+            warningSource.Stop();
+        }
     }
 
     public void Initialize(Vector3 velocity, Transform target, float curve)
     {
         listenerHead = target;
         curveAmount = curve;
-        
-        // スタート地点と、ターゲットまでの距離を記録
+
         startPosition = transform.position;
         if (target != null)
-        {
             distanceToTarget = Vector3.Distance(startPosition, target.position);
-        }
 
         rb.linearVelocity = velocity;
-        
+
         if (trajectory != null)
-        {
             trajectory.ShowTrajectory(transform.position, velocity, curveAmount);
-        }
 
         initialized = true;
     }
 
     void FixedUpdate()
     {
-        if (curveAmount != 0f)
+        if (curveAmount != 0f && rb.linearVelocity.sqrMagnitude > 0.01f)
         {
-            Vector3 sideVector = Vector3.Cross(rb.linearVelocity.normalized, Vector3.up);
-            rb.AddForce(sideVector * curveAmount, ForceMode.Acceleration);
+            Vector3 side = Vector3.Cross(rb.linearVelocity.normalized, Vector3.up);
+            rb.AddForce(side * curveAmount, ForceMode.Acceleration);
         }
     }
 
@@ -85,63 +89,121 @@ public class HybridSoundBall : MonoBehaviour
     {
         if (!initialized || listenerHead == null) return;
 
-        // --- 1. ミス（通り過ぎ・落下）判定 ---
         CheckMissAndDestroy();
-
-        // --- 2. 音の処理 ---
+        UpdateWarning();
         UpdateAudio();
     }
 
-    // ★追加：ボールが役割を終えたかチェックして消す
+    // -------------------------
+    // 警告ゾーン処理（核心）
+    // -------------------------
+    void UpdateWarning()
+    {
+        if (warningSource == null || listenerHead == null) return;
+
+        Vector3 toUser = listenerHead.position - transform.position;
+        Vector3 velocity = rb.linearVelocity;
+
+        if (velocity.sqrMagnitude < 0.01f) return;
+
+        Vector3 velocityDir = velocity.normalized;
+
+        // ★ ユーザーに向かっているか
+        float approaching = Vector3.Dot(velocityDir, toUser.normalized);
+
+        // ★ 将来の最近接距離（軌跡ベース）
+        float futureClosestDistance =
+            Vector3.Cross(toUser, velocityDir).magnitude;
+
+        bool willBeDangerous =
+            approaching > 0.5f &&                 // 向かってきている
+            futureClosestDistance <= warningDistance; // 将来近くを通る
+
+        if (willBeDangerous)
+        {
+            if (!warningSource.isPlaying)
+                warningSource.Play();
+
+            float t =
+                Mathf.InverseLerp(warningDistance, 0.3f, futureClosestDistance);
+
+            warningSource.pitch = Mathf.Lerp(0.9f, 1.6f, t);
+            warningSource.volume = Mathf.Lerp(0.4f, 1.0f, t);
+
+            if (trajectory != null)
+                trajectory.SetWarningColor();
+        }
+        else
+        {
+            if (warningSource.isPlaying)
+                warningSource.Stop();
+
+            if (trajectory != null)
+                trajectory.SetNormalColor();
+        }
+    }
+
+    // -------------------------
+    // 通常音
+    // -------------------------
+    void UpdateAudio()
+    {
+        float distance =
+            Vector3.Distance(transform.position, listenerHead.position);
+
+        float speed = rb.linearVelocity.magnitude;
+
+        float tDist =
+            Mathf.InverseLerp(maxSignalDistance, 0.5f, distance);
+
+        signalSource.pitch =
+            Mathf.Lerp(minSignalPitch, maxSignalPitch, tDist);
+
+        if (distance > choppingStartDistance)
+        {
+            signalSource.volume = 1f;
+        }
+        else
+        {
+            float tChop =
+                Mathf.InverseLerp(choppingStartDistance, 0.5f, distance);
+
+            float chopSpeed =
+                Mathf.Lerp(minChopSpeed, maxChopSpeed, tChop);
+
+            chopTimer += Time.deltaTime * chopSpeed;
+            signalSource.volume =
+                Mathf.Sin(chopTimer) * 0.5f + 0.5f;
+        }
+
+        float speedFactor = Mathf.Clamp01(speed / 20f);
+        windSource.volume = speedFactor;
+        windSource.pitch =
+            Mathf.Lerp(minWindPitch, maxWindPitch, speedFactor);
+    }
+
+    // -------------------------
+    // 消滅判定
+    // -------------------------
     void CheckMissAndDestroy()
     {
-        // A. 床に落ちた場合
         if (transform.position.y < floorHeight)
         {
             Destroy(gameObject);
             return;
         }
 
-        // B. プレイヤーの後ろに通り過ぎた場合
-        // 「発射地点からの現在の距離」が「発射地点からターゲットまでの距離 + 余白」を超えたら消す
-        float currentDistanceFromStart = Vector3.Distance(startPosition, transform.position);
+        float traveled =
+            Vector3.Distance(startPosition, transform.position);
 
-        if (currentDistanceFromStart > distanceToTarget + destroyMargin)
-        {
-            // ここで消すことで、軌跡も一緒に消えます
+        if (traveled > distanceToTarget + destroyMargin)
             Destroy(gameObject);
-        }
-    }
-
-    void UpdateAudio()
-    {
-        float distance = Vector3.Distance(transform.position, listenerHead.position);
-        float speed = rb.linearVelocity.magnitude;
-
-        // Signal (接近音)
-        float t_dist = Mathf.InverseLerp(maxSignalDistance, 0.5f, distance);
-        signalSource.pitch = Mathf.Lerp(minSignalPitch, maxSignalPitch, t_dist);
-
-        if (distance > choppingStartDistance)
-        {
-             signalSource.volume = 1.0f; 
-        }
-        else
-        {
-            float t_chop = Mathf.InverseLerp(choppingStartDistance, 0.5f, distance);
-            float currentChopSpeed = Mathf.Lerp(minChopSpeed, maxChopSpeed, t_chop);
-            chopTimer += Time.deltaTime * currentChopSpeed;
-            signalSource.volume = (Mathf.Sin(chopTimer) * 0.5f) + 0.5f;
-        }
-
-        // Wind (風切り音)
-        float speedFactor = Mathf.Clamp01(speed / 20f);
-        windSource.volume = speedFactor;
-        windSource.pitch = Mathf.Lerp(minWindPitch, maxWindPitch, speedFactor);
     }
 
     void OnDestroy()
     {
         if (trajectory != null) trajectory.Hide();
+        if (warningSource != null && warningSource.isPlaying)
+            warningSource.Stop();
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class BallCatcher : MonoBehaviour
@@ -9,78 +10,66 @@ public class BallCatcher : MonoBehaviour
 
     [Header("エフェクト")]
     public GameObject catchEffectPrefab;
+    [Tooltip("エフェクトの表示時間（秒）")]
+    public float effectLifeTime = 2.0f;
 
-    [Header("デバッグ表示")]
-    [Tooltip("チェックを入れると、現在の接触状態をコンソールに出し続けます")]
+    [Header("デバッグ")]
     public bool showDebugLog = true;
+    public bool showDebugGizmos = true;
 
-    // 現在触れているゾーンの管理
+    // 現在触れているゾーン
     private HashSet<HandZone> touchingZones = new HashSet<HandZone>();
+
+    private bool isCaught = false;
 
     void Update()
     {
-        // 毎フレーム、状態を監視してログを出す
+        if (isCaught) return;
+
         CheckState(HandZone.HandSide.Right);
         CheckState(HandZone.HandSide.Left);
     }
 
+    // ================================
+    // 状態チェック
+    // ================================
     void CheckState(HandZone.HandSide side)
     {
-        // 1. 今、ボールは何に触れているか？
-        bool isPalmTouching = IsZoneTouching(side, HandZone.ZoneType.Palm);
-        bool isFingerTouching = IsZoneTouching(side, HandZone.ZoneType.Finger);
+        bool palm = IsZoneTouching(side, HandZone.ZoneType.Palm);
+        bool finger = IsZoneTouching(side, HandZone.ZoneType.Finger);
 
-        // 2. 状態判定
-        if (isPalmTouching && isFingerTouching)
+        if (palm && finger)
         {
-            // 【状態：キャッチ可能】
-            // ボールが「手のひら」と「指」の両方に同時に触れている（＝3つが重なっている）
             if (showDebugLog)
-            {
-                Debug.Log($"<color=green>【{side}】掴める状態です！ (Palm & Finger Touching)</color>");
-            }
+                Debug.Log($"<color=green>[BallCatcher] CATCH READY ({side})</color>");
 
-            // ここでキャッチ実行！
             CatchSuccess(side);
-        }
-        else
-        {
-            // 【状態：キャッチ不可】
-            // どちらか片方、あるいは両方に触れていない
-            if (showDebugLog)
-            {
-                // うるさすぎる場合はここをコメントアウトしてください
-                string state = "None";
-                if (isPalmTouching) state = "Palm Only";
-                if (isFingerTouching) state = "Finger Only";
-
-                if (state != "None") // 何にも触れてない時はログを出さない
-                {
-                    Debug.Log($"<color=yellow>【{side}】掴めない状態です... (Current: {state})</color>");
-                }
-            }
         }
     }
 
-    // 指定した部位が今触れているかチェックする関数
     bool IsZoneTouching(HandZone.HandSide side, HandZone.ZoneType type)
     {
         foreach (var zone in touchingZones)
         {
-            // リストの中に null (消滅したオブジェクト) が混ざっていたら除去
             if (zone == null) continue;
-
-            if (zone.handSide == side && zone.zoneType == type) return true;
+            if (zone.handSide == side && zone.zoneType == type)
+                return true;
         }
         return false;
     }
 
+    // ================================
+    // Trigger
+    // ================================
     void OnTriggerEnter(Collider other)
     {
         HandZone zone = other.GetComponent<HandZone>();
         if (zone != null)
         {
             touchingZones.Add(zone);
+
+            if (showDebugLog)
+                Debug.Log($"[BallCatcher] Enter: {zone.handSide} {zone.zoneType}");
         }
     }
 
@@ -90,22 +79,87 @@ public class BallCatcher : MonoBehaviour
         if (zone != null)
         {
             touchingZones.Remove(zone);
+
+            if (showDebugLog)
+                Debug.Log($"[BallCatcher] Exit: {zone.handSide} {zone.zoneType}");
         }
     }
 
+    // ================================
+    // Catch Success
+    // ================================
     void CatchSuccess(HandZone.HandSide side)
     {
-        // 多重発動防止
-        if (!gameObject.activeSelf) return;
+        if (isCaught) return;
+        isCaught = true;
 
-        Debug.Log($"<color=cyan>=== NICE CATCH! ({side}) ===</color>");
+        Debug.Log($"<color=cyan>=== NICE CATCH ({side}) ===</color>");
 
-         // ★ カウントを1増やす
-         ScoreManager.AddCount(1);
+        // スコア
+        ScoreManager.AddCount(1);
 
-        if (catchSound != null) AudioSource.PlayClipAtPoint(catchSound, transform.position, soundVolume);
-        if (catchEffectPrefab != null) Instantiate(catchEffectPrefab, transform.position, Quaternion.identity);
+        // SE
+        if (catchSound != null)
+        {
+            AudioSource.PlayClipAtPoint(
+                catchSound,
+                transform.position,
+                soundVolume);
+        }
+        else
+        {
+            Debug.LogWarning("[BallCatcher] catchSound is NULL");
+        }
 
+        // エフェクト
+        SpawnCatchEffect();
+
+        // ボールは1フレーム後に消す
+        StartCoroutine(DestroyNextFrame());
+    }
+
+    // ================================
+    // Effect Spawn
+    // ================================
+    void SpawnCatchEffect()
+    {
+        if (catchEffectPrefab == null)
+        {
+            Debug.LogError("[BallCatcher] catchEffectPrefab is NULL");
+            return;
+        }
+
+        Vector3 spawnPos = transform.position + Vector3.up * 0.2f;
+
+        Debug.Log($"[BallCatcher] Effect Spawn Pos: {spawnPos}");
+
+        GameObject effect = Instantiate(
+            catchEffectPrefab,
+            spawnPos,
+            Quaternion.identity);
+
+        Debug.Log($"[BallCatcher] Effect Instantiated: {effect.name}");
+
+        Destroy(effect, effectLifeTime);
+    }
+
+    IEnumerator DestroyNextFrame()
+    {
+        yield return null;
         Destroy(gameObject);
+    }
+
+    // ================================
+    // Gizmos（Scene可視化）
+    // ================================
+    void OnDrawGizmos()
+    {
+        if (!showDebugGizmos) return;
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, 0.15f);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position + Vector3.up * 0.2f, 0.1f);
     }
 }

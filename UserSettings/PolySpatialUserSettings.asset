@@ -13,20 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ConnectToPlayToDevice: 1
-  m_PlayToDeviceDisabledTrackers: []
-  m_MaximumNumOfAudioPacketsPerFrame: 4
   m_ConnectionTimeout: 2
   m_ConnectionCandidates:
     m_Connections:
-    - m_IP: 192.168.11.4
+    - m_IP: 192.168.10.16
       m_ServerPort: 9876
     m_ConnectionsInfo:
-    - IP: 192.168.11.4
+    - IP: 192.168.10.16
       Name: localhost
       ServerPort: 9876
       Status: 0
-      HostPolySpatialVersion: 2.4.3
-      HostPolySpatialMagicCookie: 1754062704675767000
+      HostPolySpatialVersion: 2.3.1
+      HostPolySpatialMagicCookie: 1746124864139345000
       IsSelected: 1
   m_PlayToDeviceLimitFPSEnable: 1
   m_PlayToDeviceLimitFPS: 45
